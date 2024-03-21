@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -19,6 +25,8 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
@@ -30,13 +38,9 @@ main {
 }
 
 aside {
-    width: 20rem;
-    margin: 1em;
-    border: 1px dotted rgba(245, 245, 245, 3);
-    padding: 1.5rem;
-    background-color: #2170b0;
-    color: whitesmoke;
+    width: 20em;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -44,8 +48,28 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 28px;
+    left: 100px;
+    color: #181d0a;
+}
+
 footer {
     margin-top: 10rem;
     border-top: 2px solid rgba(0, 0, 0, 3);
     text-align: center;
 }
+
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(24, 29, 10, 3);
+    padding: 1rem;
+    background-color: #bbd3e6;
+    color: #181d0a;
+}
+
+/*https://coolors.co/709fcd-181d0a-bbd3e6-6889ad-94bfe1*/
