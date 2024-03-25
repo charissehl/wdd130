@@ -1,0 +1,190 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@560&family=Prosto+One&display=swap');
+
+.montserrat-medium {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 560;
+    font-style: normal;
+  }
+
+  .prosto-one-regular {
+    font-family: 'Prosto One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+/* CSS variables */
+:root {
+    --primary-color: #030326;
+    --secondary-color: #fff;
+    --accent1-color: #05f2f2;
+    --accent2-color: #2525b9;
+    /* changed primary-color and accent2 color to match logo */
+
+    --rgb-primary-color: 3,3,38;
+    --rgb-secondary-color: 255,255,255;
+    --rgb-accent1-color: 5,242,242;
+    --rgb-accent2-color: 37,37,185;
+
+    --heading-font: 'Prosto One', display;
+    --paragraph-font: 'Montserrat', sans-serif;
+
+
+    --nav-background-color: #030326;
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #05f2f2;
+    --nav-hover-background-color: #2525b9;
+}
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    text-align: right;
+    padding: 10px 30px; 
+    border-top: 0.31em solid var(--accent1-color);
+    border-bottom: 0.15em solid var(--accent2-color);
+}
+
+nav a {
+    font-family: var(--paragraph-font);
+    color: var(--nav-link-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 11px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+body {
+    background-color: var(--primary-color);
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p {
+    font-family: var(--paragraph-font);
+    font-size: 1.1em;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    letter-spacing: 0.02em;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 2.4em;
+    color: var(--accent2-color);
+}
+
+footer {
+    background-color: var(--accent1-color);
+}
+
+footer p {
+    font-size: 1em;
+    padding: 10px 100px;
+}
+
+footer img {
+    width: 70px;
+    margin: 10px;
+}
+
+/* Class selectors */
+.header {
+    background-color: var(--secondary-color);
+}
+
+.header img {
+    background-color: var(--secondary-color);
+    padding: 2px 10px 0;
+    width: 200px;
+}
+
+.herodiv {
+    max-width: 1280px;
+    background-color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+    line-height: 1.7em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.herodiv img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.herodiv h1 {
+    background-color: rgba(var(--rgb-primary-color), 0.5);
+    color: var(--secondary-color);
+    text-align: center;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 17px;
+    position: absolute;
+}
+
+.hero-article {
+    display: block;
+    width: 85%;
+    background-color: rgba(var(--rgb-accent2-color), 0.4);
+    color: var(--primary-color);
+    top: 175px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+    position: absolute;
+}
+
+.hero-article p {
+    font-size: 1.3em;
+    color: var(--secondary-color);
+    line-height: 1.9em;
+    padding: 0 25px;
+}
+
+.hero-article img {
+    width: 250px;
+    height: auto;
+    float: right;
+    padding: 0 10px;
+}
+
+.hero-section {
+    margin: 50px 100px 15px;
+}
+
+.hero-section img {
+    max-width: 650px;
+    height: auto;
+    margin: 0 0 20px;
+}
