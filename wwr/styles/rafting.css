@@ -246,7 +246,7 @@ footer {
 }
 
   .footer p {
-    background-color: none;
+    background-color: transparent;
     color: var(--secondary-color);
     padding: 20px;
     grid-column: 1/4;
