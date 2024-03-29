@@ -32,16 +32,24 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: var(--secondary-color);
-    grid-template-columns: 45% 1fr;
-    padding: 5px;
-    border-bottom: 4px solid var(--accent1-color);
-    max-width: 1280px;
-}
 nav {
-    display: flex;
-    text-align: center;
+    background-color: var(--nav-background-color);
+    padding: 12px 40px; 
+    border-top: 0.31em solid var(--accent1-color);
+    border-bottom: 0.15em solid var(--accent2-color);
+}
+
+nav a {
+    font-family: var(--paragraph-font);
+    color: var(--nav-link-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
 }
 
 body {
@@ -98,38 +106,22 @@ footer {
 }
 
 /* Class selectors */
+.header {
+    background-color: var(--secondary-color);
+    grid-template-columns: 1fr 2fr;
+}
 
-.head img {
-    width: 150px;
-    height: auto;
+.header img {
+    background-color: var(--secondary-color);
+    padding: 2px 10px 0;
+    width: 200px;
+    justify-self: flex-end;
+}
+
+.navlinks {
+    padding: 15px;
     justify-self: center;
 }
-
-.navigation {
-    background-color: var(--primary-color);
-    max-width: 80%;
-    display: flex;
-    list-style: none;
-}
-
-.navigation li {
-    display: flex;
-}
-
-.navigation a {
-    display: block;
-    font-family: var(--paragraph-font);
-    color: var(--nav-link-color);
-    padding: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.navigation a:hover {
-    background-color: var(--nav-hover-background-color);
-    color: var(--nav-hover-link-color);
-}
-
 .herodiv {
     max-width: 1280px;
     background-color: var(--secondary-color);
@@ -201,9 +193,6 @@ footer {
 .history-grid {
     display: grid;
     gap: 45px;
-    max-width: 1280px;
-    border-bottom: 4px solid var(--accent1-color);
-    padding-bottom: 45px;
 }
 
 .history-grid img {
@@ -221,6 +210,10 @@ footer {
     grid-row: 1;
 }
 
+.gallery-h2 {
+    padding-top: 10px;
+    border-top: 0.2em solid var(--accent1-color);
+}
 .about-gallery {
     display: grid;
     grid-template-columns: repeat(5, minmax(0,1fr));
