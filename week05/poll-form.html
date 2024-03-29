@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       <title>Charisse Hearns-Lemon | WDD 130</title>
+       <meta name="description" content="Charisse Hearns-Lemon WDD 130 Poll Form">
+       <meta name="author" content="Charisse Hearns-Lemon">
+       <link rel="stylesheet" href="styles/poll-form.css">
+    </head>
+    <body>
+        <header>
+            <h1>WDD 130 | HTML Form - User Poll</h1>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-item column2">
+                        <label for="fullname">Full name:</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div class="form-item column2">
+                        <label for="useremail">Email:</label>
+                        <input type="email" id="useremail" name="useremail">
+                    </div>
+                </fieldset>
+                 <!-- Another valid way is the 'implicit label' method:
+                 <label>Full Name: <input type="text" name="fullname"></label> 
+                 <label>Email: <input type="email" name="useremail"></label> -->
+                <fieldset>
+                    <legend>Questions</legend>
+                    <div class="column1">
+                        <label for="browser">What is your favourite internet browser?</label>
+                        <select id="browser" name="browser">
+                            <option value="chrome">Chrome</option>
+                            <option value="edge">Edge</option>
+                            <option value="firefox">Firefox</option>
+                            <option value="brave">Brave</option>
+                            <option value="opera">Opera</option>
+                            <option value="other">Other</option>
+                    </select><br>
+                    <div class="form-item column1">
+                        <label for="pet">Do you have a household pet?"</label>
+                        <input type="checkbox" id="pet" name="pet">
+                    </div><br>
+                    <div class="form-item column1">
+                        <label for="locations">List the places you have lived:</label><br>
+                        <textarea id="locations" name="locations" rows="3" placeholder="Auckland, New Zealand, Sydney, Australia, Johannesburg, South Africa"></textarea>
+                    </div>
+                </fieldset>
+                <!-- <input type="submit" value="Submit Poll"> -->
+                <button type="submit">Submit Poll</button>
+            </form>
+        </main>
+        <footer>
+            <p>©2024 • Charisse Hearns-Lemon • HTML Poll Form</p>
+        </footer>
+    </body>
+</html>
