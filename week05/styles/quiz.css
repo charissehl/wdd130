@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", "sans-serif";
+    font-weight: 400;
+    font-size: 1.1em;
+    background: #fff;
+    color: #004;
+}
+
+header {
+    margin: auto;
+    padding: 20px 0;
+    width: 650px;
+}
+
+h1 {
+    font-family: "Poppins", display, san-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    width: 650px;
+    margin: 0 auto;
+    padding: 0 10px;
+    border: 2px solid rgb(173, 173, 192);
+    border-radius: 3%;
+    background-color: #edf;
+    position: relative;
+}
+
+legend {
+    padding: 0.7rem;
+    font-weight: 700;
+}
+
+label {
+    text-align: left;
+    float: left;
+    margin-top: 0.3em;
+}
+
+label,
+input, 
+button,
+select,
+textarea {
+    font-family: "Lato", sans-serif; 
+    font-weight: 700;
+    padding: 0.6em;
+}
+
+input,
+select,
+textarea {
+    background: #fff;
+    border: 2px solid rgb(173, 173, 192);
+    font-size: 1.1em;
+    margin: 10px auto;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background: #eff 
+}
+
+button {
+    background-color: green;
+    color: #fff;
+    border: 2px solid darkgreen;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    margin: 0.5em;
+}
+
+button:hover {
+    background-color: aquamarine;
+    color: #004;
+}
+
+footer {
+    width: 650px;
+    color: #fff;
+    background-color: #004;
+    border: 2px solid rgb(173, 173, 192);
+    font-size: 0.9em;
+    letter-spacing: 0.06em;
+    margin: 1rem auto 0;
+    padding: 12px;
+    text-align: center;
+}
+
+.q-number {
+    font-family: "Poppins", sans-serif;
+    color: green;
+}
+
+#q1,
+#q2,
+#q3,
+#q4 {
+    color: rgb(116, 116, 116);
+    font-size: 1em;
+    font-style: italic;
+    letter-spacing: 0.05em;
+}

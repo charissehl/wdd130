@@ -74,6 +74,7 @@ textarea {
     font-size: 1.1em;
     padding: 0.4em;
     margin: 20px;
+    border: 2px solid rgb(173, 173, 192);
 }
 
 input:focus,
@@ -81,6 +82,7 @@ textarea:focus,
 select:focus {
     background: #eff 
 }
+
 input[type="checkbox"] {
     width: 35px;
     height: 35px;
