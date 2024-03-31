@@ -276,3 +276,7 @@ footer {
     width: 50px;
     height: auto;
   }
+
+  #contact-header {
+    width: 60%;
+  }
