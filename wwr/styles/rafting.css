@@ -76,6 +76,90 @@ h2 {
     color: var(--accent2-color);
 }
 
+form {
+    width: 600px;
+    margin: 0;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border: 9px solid var(--accent2-color);
+    text-align: center;
+    display: grid;
+}
+
+form h4 {
+    color: var(--secondary-color);
+    font-size: 2em;
+    text-align: center;
+    margin: 40px 20px 20px;
+}
+
+form p {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 0.5em;
+    margin: 0.8em 0 0.3em;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 0.5rem;
+    border: none;
+    padding: 1rem;
+}
+
+legend {
+    padding-top: 0.5rem;
+    color: var(--accent1-color);
+    font-size: 1.3em;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: var(--paragraph-font);
+}
+
+label {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    vertical-align: bottom;
+    margin-left: 0.5em;
+}
+
+button {
+    margin: 0 1rem 0.9rem;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
+
 footer {
     background-color: var(--accent1-color);
 }
@@ -131,6 +215,7 @@ footer {
 }
 
 .herodiv {
+    width: 1280px;
     max-width: 1280px;
     background-color: var(--secondary-color);
     font-family: var(--paragraph-font);
@@ -159,6 +244,22 @@ footer {
     position: absolute;
 }
 
+.herodiv h3 {
+    background-color: rgba(var(--rgb-secondary-color), 0.35);
+    color: var(--accent2-color);
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: -0.025em;
+    line-height: 1.5em;
+    top: 500px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 17px;
+    position: absolute;
+}
+
 .hero-article {
     display: block;
     width: 85%;
@@ -171,6 +272,20 @@ footer {
     margin-right: auto;
     padding: 20px 20px;
     position: absolute;
+}
+
+.hero-article h4 {
+    color: var(--accent1-color);
+    font-size: 1.5em;
+    letter-spacing: -0.01em;
+    line-height: 1.5em;
+}
+
+.hero-article h5 {
+    color: var(--secondary-color);
+    font-size: 1.1em;
+    letter-spacing: 0.15em;
+    line-height: 2.4em;
 }
 
 .hero-article p {
@@ -221,6 +336,65 @@ footer {
     grid-row: 1;
 }
 
+.contact-info {
+    width: 1280px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin-top: 10px;
+}
+
+.required {
+    color: var(--accent1-color);
+    margin-left: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.map {
+    display: grid;
+    width: 50%;
+    top: 30px;
+    right: 30px;
+    border: 0;
+    position: absolute;
+
+}
+
+.map img {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.map h2 {
+    margin-top: 10px;
+}
+
+.address {
+
+    border: 8px solid var(--accent2-color);
+    top: 630px;
+    height: 120px;
+    text-align: center;
+}
+
+
+.address h4 {
+    color: var(--accent2-color);
+    font-size: 1.5em;
+    letter-spacing: -0.01em;
+    line-height: 1.5em;
+    padding-top: 0px;
+    margin-top: 0.3em;
+    }
+    
+.address h5 {
+    color: var(--primary-color);
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    padding-bottom: 30;
+}
+
 .about-gallery {
     display: grid;
     grid-template-columns: repeat(5, minmax(0,1fr));
@@ -232,19 +406,66 @@ footer {
     flex-flow: column;
     max-width: 220px;
     margin: auto;
-  }
+}
   
-  .about-gallery img {
+.about-gallery img {
     max-width: 220px;
     max-height: 150px;
-  }
+}
   
-  .about-gallery figcaption {
+.about-gallery figcaption {
     color: var(--primary-color);
     font-size: 0.9em;
     text-align: center;
     line-height: 0.5em;
-  }
+}
+
+.team-section {
+    max-width: 1280px;
+    height: 100%;
+    background-color: var(--accent1-color);
+    margin-top: 0px;
+    border-top: 4px solid var(--primary-color);
+}
+
+.team-section h2 {
+    margin-top: 0px;
+    padding-top: 15px;
+    color: var(--primary-color);
+}
+
+.team-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    margin-bottom: 50px;
+    margin: 0;
+}
+
+.team-gallery figure {
+    display: flex;
+    flex-flow: column;
+    margin: 0 35px;
+}
+
+.team-gallery img {
+    width: auto;
+    height: 280px;
+    object-fit: cover;
+}
+
+.team-gallery h5 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1em;
+    font-weight: 550;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0.8em;
+}
+
+.team-gallery figcaption {
+    color: var(--primary-color);
+}
 
 .footer {
     background-color: var(--primary-color);
@@ -252,7 +473,7 @@ footer {
     border-bottom: 0.4em solid var(--accent2-color);
 }
 
-  .footer p {
+.footer p {
     background-color: transparent;
     color: var(--secondary-color);
     padding: 20px;
@@ -260,9 +481,9 @@ footer {
     grid-row: 1/1;
     justify-self: center;
     z-index: 0;
-  }
+}
 
-  .footer-links {
+.footer-links {
     grid-column: 3/4;
     grid-row: 1/1;
     display: flex;
@@ -270,13 +491,31 @@ footer {
     padding: 0; 
     padding-right: 65px;
     border: none;
-  }
+}
 
-  .footer-links img {
+.footer-links img {
     width: 50px;
     height: auto;
-  }
+}
 
-  #contact-header {
-    width: 60%;
-  }
+#contact-numbers {
+    background-color: var(--accent2-color);
+    width: 1280px;
+    max-width: 1280px;
+    top: 630px;
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+#contact-number1 {
+    justify-self: center;
+    text-align: center;
+    margin-left: 300px;
+}
+
+#contact-number2 {
+    justify-self: center;
+    text-align: center;
+    margin-right: 300px;
+}

@@ -30,39 +30,114 @@
             <div class="herodiv">
                 <img src="images/contact-img.png" alt="Background image">
                 <h1>Contact Us</h1>
-                <div class="hero-article" id="contact-header">
-                    <p>Phone 0800-RAPIDS</p>
-                    <p>Mobile +649876543</p>
-                </div>
-                <section class="contact-info">
-                    <div class="history-grid">
-                        <p class="history-p1">Brief history of the company Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero officiis recusandae natus illum.</p>
-                        <img src="images/history.jpg" alt="history photo">
-                        <p class="history-p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos explicabo quidem perspiciatis? Sed consequatur natus et beatae dignissimos optio tempora? Illum, pariatur?</p>
+                <h3>Looking for a booking or need to get in touch? <br>We'd love to hear from you!</h3>
+                <article class="hero-article" id="contact-numbers">
+                    <div id="contact-number1">
+                        <h4>Phone</h4>
+                        <h5>0800-RAPIDS</h5>
                     </div>
+                    <div id="contact-number2">
+                        <h4>Mobile</h4>
+                        <h5>+64-987-6543</h5>
+                    </div>
+                </article>
+                <section class="contact-info">
+                    <article>
+                        <div>
+                            <form>
+                                <h4>Send us a message</h4>
+                                <fieldset>
+                                    <legend>Contact Information</legend>
+                                    <div>
+                                        <label>NAME<span class="required">*</span><br>
+                                            <input type="text" name="firstname" placeholder="First">
+                                        </label><br>
+                                        <label> 
+                                            <input type="text" name="lastname" placeholder="Last">
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <label>EMAIL<span class="required">*</span><br>
+                                            <input type="email" name="useremail" placeholder="Email">
+                                        </label><br>
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <label>PHONE <br>
+                                            <input type="number" name="userphone" placeholder="Phone">
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Enquiry Details</legend>
+                                    <div>
+                                        <label for="enquiry-type">ENQUIRY TYPE<span class="required">*</span><br>
+                                        </label>
+                                        <select id="enquiry-type" name="enquiry-type">
+                                            <option disabled selected value>-- select an option -- </option>
+                                            <option value="booking">Booking</option>
+                                            <option value="equipment">Equipment Hire</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="other">Other</option>
+                                    </select><br>
+                                    <div">
+                                        <br>
+                                        <label for="message">MESSAGE<span class="required">*</span>
+                                        </label><br>
+                                        <textarea id="message" name="message" rows="7" placeholder="Enter your message here."></textarea><br>
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <label for="newsletter">Subscribe to our monthly newsletter </label>
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                    </div>
+                                </fieldset>
+                                <div>
+                                    <p><span class="required"> * </span> Required fields</p><br>
+                                </div>
+                                <button type="send">Send</button>
+                            </form>
+                        </div>
+                        <div class="map">
+                            <div>
+                                <img src="images/team0.jpg" alt="Group photo of all staff members after a rafting adventure.">
+                            </div>
+                            <h2>Where to find us</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7226.001007381323!2d175.76226746068457!3d-38.390994239557!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1712468402271!5m2!1sen!2snz" width="660px" height="400px" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="address">
+                                <h4>Physical address</h4>
+                                <h5>1234/56 Waipapa Road</h5>
+                                <h5>Mangakino 3492</h5>
+                            </div>
+
+                        </div>
+                    </article>
+                    
                 </section>
-                <section class="hero-section gallery">
-                    <h2>Adventure Awaits You!</h2>
-                    <div class="about-gallery">
+                <section class="team-section">
+                    <h2>Meet the team</h2>
+                    <div class="team-gallery">
                         <figure>
-                            <img src="images/about-img1.jpg" alt="Image 1">
-                            <figcaption>White Foam Adventure</figcaption>
+                            <img src="images/team01.jpg" alt="Team member 1">
+                            <figcaption>
+                                <h5>Team Member 1</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima autem alias, quos pariatur unde recusandae debitis esse non, consequuntur ipsam sapiente, facilis omnis neque. Mollitia.
+                            </figcaption>
                         </figure>
                         <figure>
-                            <img src="images/about-img2.jpg" alt="Image 2">
-                            <figcaption>Rocky Cove Adventure</figcaption>
+                            <img src="images/team02.jpg" alt="Team member 2">
+                            <figcaption>
+                                <h5>Team Member 2</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima autem alias, quos pariatur unde recusandae debitis esse non, consequuntur ipsam sapiente, facilis omnis neque. Mollitia.
+                            </figcaption>
                         </figure>
                         <figure>
-                            <img src="images/about-img3.jpg" alt="Image 3">
-                            <figcaption>Kea River</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/about-img4.jpg" alt="Image 4">
-                            <figcaption>Evergreen Drift</figcaption>
-                        </figure>
-                        <figure>
-                        <img src="images/about-img5.jpg" alt="Image 5">
-                        <figcaption>Xtreme Rapids</figcaption>
+                            <img src="images/team03.jpg" alt="Team member 3">
+                            <figcaption>
+                                <h5>Team Member 3</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima autem alias, quos pariatur unde recusandae debitis esse non, consequuntur ipsam sapiente, facilis omnis neque. Mollitia.
+                            </figcaption>
                         </figure>
                     </div>
                 </section>
